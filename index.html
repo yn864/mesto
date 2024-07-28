@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/index.css">
+    <link rel="icon" type="image/x-icon" href="images/logotye.svg">
+    <title>Mesto</title>
+</head>
+
+<body class="root">
+    <div class="page">
+        <header class="header">
+            <img class="header__logo" src="images/logotye.svg" alt="Логотип сайта">
+        </header>
+        <main class="content">
+            <section class="profile">
+                <img class="profile__avatar" src="images/custo.jpg" alt="Аватар">
+                <div class="profile__info">
+                    <h1 class="profile__info-name">Жак-Ив Кусто</h1>
+                    <button class="profile__info-button" type="button" aria-label="Редактировать профиль"></button>
+                    <p class="profile__info-about">Исследователь океана</p>
+                </div>
+                <button class="profile__button" type="button" aria-label="Добавить фото">
+                    <!-- <img src="/images/add-button.svg"> -->
+                </button>
+            </section>
+            <section class="photo-gallery">
+                <ul class="photo-gallery__container">
+                    <li class="photo-card">
+                        <img class="photo-card__image" src="images/carachaevo.jpg" alt="Фотография">
+                        <div class="photo-card__info">
+                            <h2 class="photo-card__title">Карачаево-Черкесск</h2>
+                            <button class="photo-card__like" type="button" aria-label="Отметка нравится"></button>
+                        </div>
+                    </li>
+                    <li class="photo-card">
+                        <img class="photo-card__image" src="images/elbrus.jpg" alt="Фотография">
+                        <div class="photo-card__info">
+                            <h2 class="photo-card__title">Эльбрус</h2>
+                            <button class="photo-card__like" type="button" aria-label="Отметка нравится"></button>
+                        </div>
+                    </li>
+                    <li class="photo-card">
+                        <img class="photo-card__image" src="images/dombai.jpg" alt="Фотография">
+                        <div class="photo-card__info">
+                            <h2 class="photo-card__title">Домбай</h2>
+                            <button class="photo-card__like" type="button" aria-label="Отметка нравится"></button>
+                        </div>
+                    </li>
+                    <li class="photo-card">
+                        <img class="photo-card__image" src="images/carachaevo.jpg" alt="Фотография">
+                        <div class="photo-card__info">
+                            <h2 class="photo-card__title">Карачаево</h2>
+                            <button class="photo-card__like" type="button" aria-label="Отметка нравится"></button>
+                        </div>
+                    </li>
+                    <li class="photo-card">
+                        <img class="photo-card__image" src="images/elbrus.jpg" alt="Фотография">
+                        <div class="photo-card__info">
+                            <h2 class="photo-card__title">Эльбрус</h2>
+                            <button class="photo-card__like" type="button" aria-label="Отметка нравится"></button>
+                        </div>
+                    </li>
+                    <li class="photo-card">
+                        <img class="photo-card__image" src="images/dombai.jpg" alt="Фотография">
+                        <div class="photo-card__info">
+                            <h2 class="photo-card__title">Домбай</h2>
+                            <button class="photo-card__like" type="button" aria-label="Отметка нравится"></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">2023</p>
+        </footer>
+    </div>
+    <!-- popup -->
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <form class="popup__form" name="profile-form">
+                <input class="popup__form-input" type="text" name="name" placeholder="Имя">
+                <input class="popup__form-input" type="text" name="about" placeholder="Описание">
+                <button class="popup__form-button" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
